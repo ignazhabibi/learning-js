@@ -1,10 +1,12 @@
 import { getItems } from "./item-service.js";
 
-let foodlist = getItems();
+const dataToShow = getItems();
 
-foodlist.forEach(function(entry) {
-    console.log(new Date(entry.timestamp).toLocaleString());
-    console.log(entry.name);
-    console.log(entry.calories);
-    
+dataToShow.forEach(function(entry) {
+    for (let prop in entry) {
+        if(prop === "timestamp") {
+            entry[prop] = new Date(entry[prop]).toLocaleString();
+        } 
+        console.log(prop + ": " + entry[prop]);
+    }  
 });
