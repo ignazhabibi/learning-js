@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { getItems } from "./item-service.js";
 
 const dataToShow = getItems();
