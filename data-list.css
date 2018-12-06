@@ -16,18 +16,15 @@ ul {
     padding: 0;
 }
 
-
 li {
     margin: 20px 0 20px 70px;
     padding-bottom: 15px;
     border-bottom: 1px solid gray;
 }
 
-li::before {
-    content: ' ';
+img.data-list-img {
     display: inline-block;
     position: absolute;
-    background: gray;
     border-radius: 50%;
     left: 20px;
     width: 40px;
@@ -43,18 +40,19 @@ p.data-list-sequence {
     line-height: 1;
 }
 
-p.data-list-title {
+h3.data-list-title {
     margin: 0 0 5px 0;
     padding: 0;
     font-size: 20px;
     color: black;
     line-height: 1;
+    font-weight: normal;
 }
 
 p.data-list-content {
     color: gray;
     font-size: 12px;
-    margin: 0;
+    margin: 0 0 3px 0;
     padding: 0;
     line-height: 1;
 }
