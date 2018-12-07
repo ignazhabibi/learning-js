@@ -1,46 +1,58 @@
 <html>
-    <head>
-        <title>Meine Food App</title>
-        <link rel="stylesheet" href="./data-list.css">
-        <script type="module" src="./data-list-component.js"></script>
-    </head>
 
-    <body>
+<head>
+    <title>Meine Food App</title>
+    <link rel="stylesheet" href="./data-list.css">
+    <script type="module" src="./data-list-component.js"></script>
+</head>
+
+<body>
+    <div class="data-list">
         <h2 class="data-list-header">Heute</h2>
-        <ul>
-            <li>   
-                <img class="data-list-img" src="./banana.jpg">
-                <p class="data-list-sequence">12:56 Uhr</p>
-                <h3 class="data-list-title">Banane</h3>
-                <p class="data-list-content">Kalorien: 600</p>
-            </li>
-            <li>
-                <img class="data-list-img" src="./peach.jpg">
-                <p class="data-list-sequence">11:53 Uhr</p>
-                <h3 class="data-list-title">Pfirsich</h3>
-                <p class="data-list-content">Kalorien: 500</p>
-            </li>
-            <li>
-                <img class="data-list-img" src="./apple.jpg">
-                <p class="data-list-sequence">09:12 Uhr</p>
-                <h3 class="data-list-title">Apfel</h3>
-                <p class="data-list-content">Kalorien: 500</p>
-            </li>
-        </ul>
+        <div class="data-list-item">
+            <img class="data-list-icon" src="./banana.jpg">
+            <div class="data-list-content">
+                <h3>Banane</h3>
+                <p>Kalorien: 500</p>
+            </div>
+            <div class="data-list-sequence">12:56 Uhr</div>
+        </div>
+        <div class="data-list-item">
+            <img class="data-list-icon" src="./peach.jpg">
+            <div class="data-list-content">
+                <h3>Pfirsich</h3>
+                <p>Kalorien: 300</p>
+            </div>
+            <div class="data-list-sequence">10:12 Uhr</div>
+        </div>
+        <div class="data-list-item">
+            <img class="data-list-icon" src="./apple.jpg">
+            <div class="data-list-content">
+                <h3>Apfel</h3>
+                <p>Kalorien: 600</p>
+            </div>
+            <div class="data-list-sequence">07:51 Uhr</div>
+        </div>
+    </div>
+
+    <div class="data-list">
         <h2 class="data-list-header">Gestern</h2>
-        <ul>
-            <li>
-                <p class="data-list-sequence">18:56 Uhr</p>
-                <h3 class="data-list-title">Tomate</h3>
-                <p class="data-list-content">Kalorien: 200</p>
-            </li>
-            <li>
-                <p class="data-list-sequence">16:19 Uhr</p>
-                <h3 class="data-list-title">Kirsche</h3>
-                <p class="data-list-content">Kalorien: 100</p>
-            </li>
-        </ul>
+        <div class="data-list-item">
+            <div class="data-list-content">
+                <h3>Banane</h3>
+                <p>Kalorien: 500</p>
+            </div>
+            <div class="data-list-sequence">12:56 Uhr</div>
+        </div>
+        <div class="data-list-item">
+            <div class="data-list-content">
+                <h3>Pfirsich</h3>
+                <p>Kalorien: 300</p>
+            </div>
+            <div class="data-list-sequence">10:12 Uhr</div>
+        </div>
+    </div>
 
+</body>
 
-    </body>
 </html>
