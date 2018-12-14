@@ -61,6 +61,29 @@ class DataListContent extends HTMLElement {
 }
 window.customElements.define("data-list-content", DataListContent);
 
+//data-list-icon
+class DataListIcon extends HTMLElement {
+    constructor() {
+        super();
+        this.attachShadow({mode: "open"});
+        var imgUrl = "./banana.jpg";
+        var img = document.createElement("img");
+        img.src = imgUrl;
+        this.shadowRoot.appendChild(img)
+        var style = document.createElement("style");
+        style.textContent = /*html*/`
+            img {
+                margin-left: 10px;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+        `;
+        this.shadowRoot.appendChild(style);
+    }
+}
+window.customElements.define("data-list-icon", DataListIcon);
+
 //data-list-sequence
 const dataListSequenceTemplate = document.createElement("template");
 dataListSequenceTemplate.innerHTML = /*html*/`
