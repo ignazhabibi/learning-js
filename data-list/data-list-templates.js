@@ -47,6 +47,14 @@ export const dataListIconTemplate = /*html*/`
             width: 40px;
             height: 40px;
         }
+
+        .placeholder {
+            margin-left: 10px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: gray;
+        }
     </style>
     <img>    
 `;

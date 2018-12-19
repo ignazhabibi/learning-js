@@ -8,10 +8,22 @@ export class DataListIcon extends HTMLElement {
         super();
         this.attachShadow({mode: "open"});
         this.shadowRoot.appendChild(iconTpl.content.cloneNode(true));
-    } 
-    connectedCallback() {   
-        const iconUrl = this.getAttribute("src");
-        const icon = this.shadowRoot.querySelector("img");
-        icon.src = iconUrl;  
+    }
+    connectedCallback() {
+        const image = this.shadowRoot.querySelector("img");
+
+        if (this.hasAttribute("src")) {
+            const imageUrl = this.getAttribute("src");
+            image.src = imageUrl;
+        } else {
+            image.remove();
+            this._createPlaceholder();
+        }
+    }
+
+    _createPlaceholder() {
+        const placeholder = document.createElement("div");
+        placeholder.setAttribute("class", "placeholder");
+        this.shadowRoot.appendChild(placeholder);
     }
 }
